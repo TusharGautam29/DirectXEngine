@@ -3,6 +3,7 @@
 #define _APPLICATIONCLASS_H_
 
 #include <windows.h>
+#include "D3DClass.h"
 // GLOBALS //
 /////////////
 const bool FULL_SCREEN = false;
@@ -19,5 +20,7 @@ public:
 	void Shutdown();
 	bool Frame();
 	bool Render();
+private:
+	D3DClass* m_Direct3D;
 };
 #endif
